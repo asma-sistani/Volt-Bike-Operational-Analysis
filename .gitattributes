@@ -1,13 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-# Force Python to be the primary language
-*.py linguist-language=Python
+
+# Force Python
 *.py linguist-detectable=true
+*.py linguist-language=Python
 
-# Ignore everything else from language statistics
-Data/* linguist-documentation
-Images/* linguist-documentation
-Visuals/* linguist-documentation
-Results/* linguist-documentation
-Executive_Summary/* linguist-documentation
-
+# Completely exclude these folders from language stats
+Data/* linguist-vendored
+Images/* linguist-vendored
+Visuals/* linguist-vendored
+Results/* linguist-vendored
+Executive_Summary/* linguist-vendored
